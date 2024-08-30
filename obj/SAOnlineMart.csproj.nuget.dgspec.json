@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/joruhandewit/Documents/BSc IT/Year 3/Block 3/ITEHA/ITEHAProject/SAOnlineMart/SAOnlineMart.csproj": {}
+    "/Users/joruhandewit/Documents/BSc IT/Year 3/Block 3/ITEHA/SAOnlineMartGitHub/SAOnlineMart/SAOnlineMart.csproj": {}
   },
   "projects": {
-    "/Users/joruhandewit/Documents/BSc IT/Year 3/Block 3/ITEHA/ITEHAProject/SAOnlineMart/SAOnlineMart.csproj": {
+    "/Users/joruhandewit/Documents/BSc IT/Year 3/Block 3/ITEHA/SAOnlineMartGitHub/SAOnlineMart/SAOnlineMart.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/joruhandewit/Documents/BSc IT/Year 3/Block 3/ITEHA/ITEHAProject/SAOnlineMart/SAOnlineMart.csproj",
+        "projectUniqueName": "/Users/joruhandewit/Documents/BSc IT/Year 3/Block 3/ITEHA/SAOnlineMartGitHub/SAOnlineMart/SAOnlineMart.csproj",
         "projectName": "SAOnlineMart",
-        "projectPath": "/Users/joruhandewit/Documents/BSc IT/Year 3/Block 3/ITEHA/ITEHAProject/SAOnlineMart/SAOnlineMart.csproj",
+        "projectPath": "/Users/joruhandewit/Documents/BSc IT/Year 3/Block 3/ITEHA/SAOnlineMartGitHub/SAOnlineMart/SAOnlineMart.csproj",
         "packagesPath": "/Users/joruhandewit/.nuget/packages/",
-        "outputPath": "/Users/joruhandewit/Documents/BSc IT/Year 3/Block 3/ITEHA/ITEHAProject/SAOnlineMart/obj/",
+        "outputPath": "/Users/joruhandewit/Documents/BSc IT/Year 3/Block 3/ITEHA/SAOnlineMartGitHub/SAOnlineMart/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/joruhandewit/.nuget/NuGet/NuGet.Config"
@@ -86,7 +86,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.401/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

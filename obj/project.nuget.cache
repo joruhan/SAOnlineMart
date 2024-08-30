@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "nubY4s5NwzjjCZSNAPmN7WfLl2E3Ve/Ox149+bjec+mRwCOgYW3kLTO9OdCLVFNz8T3Yf6y4CZXQoRtZRM/Ugg==",
+  "dgSpecHash": "jhSlSI03BUrLCpFVs8LagHZRectodSPa88adhRghpXemXePPvm6Dy29ALQS1C7bNOX7GOePBGqmxPogRHSYPaQ==",
   "success": true,
-  "projectFilePath": "/Users/joruhandewit/Documents/BSc IT/Year 3/Block 3/ITEHA/ITEHAProject/SAOnlineMart/SAOnlineMart.csproj",
+  "projectFilePath": "/Users/joruhandewit/Documents/BSc IT/Year 3/Block 3/ITEHA/SAOnlineMartGitHub/SAOnlineMart/SAOnlineMart.csproj",
   "expectedPackageFiles": [
     "/Users/joruhandewit/.nuget/packages/azure.core/1.35.0/azure.core.1.35.0.nupkg.sha512",
     "/Users/joruhandewit/.nuget/packages/azure.identity/1.10.3/azure.identity.1.10.3.nupkg.sha512",
