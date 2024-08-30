@@ -1,0 +1,27 @@
+﻿@model IEnumerable<SAOnlineMart.Models.JewelryModel>
+
+<h1>Jewelry List</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Description</th>
+            <th>Price</th>
+            <th>Details</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>@item.Name</td>
+                <td>@item.Description</td>
+                <td>R @item.Price.ToString("N2")</td> <!-- Format price as currency -->
+                <td>
+                    <a href="@Url.Action("Details", "Jewelry", new { id = item.Id })">Details</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

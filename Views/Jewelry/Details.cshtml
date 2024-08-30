@@ -1,0 +1,6 @@
+﻿@model SAOnlineMart.Models.JewelryModel
+
+<h1>@Model.Name</h1>
+<p><strong>Description:</strong> @Model.Description</p>
+<p><strong>Price:</strong> R @Model.Price.ToString("N2")</p>
+<a href="@Url.Action("Index", "Jewelry")" style="color: black; text-decoration: none;">Back to List</a>

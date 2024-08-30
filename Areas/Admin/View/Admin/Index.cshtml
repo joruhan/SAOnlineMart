@@ -1,0 +1,31 @@
+﻿@model IEnumerable<SAOnlineMart.Areas.Admin.Model.UserAccount>
+
+<h1>Admin Panel</h1>
+
+<div>
+    <h2>Manage Users</h2>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>User ID</th>
+                <th>Username</th>
+                <th>Email</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var user in Model)
+            {
+                <tr>
+                    <td>@user.UserId</td>
+                    <td>@user.userName</td>
+                    <td>@user.userEmail</td>
+                    <td>
+                        <a asp-action="EditUser" asp-route-id="@user.UserId">Edit</a> |
+                        <a asp-action="DeleteUser" asp-route-id="@user.UserId">Delete</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

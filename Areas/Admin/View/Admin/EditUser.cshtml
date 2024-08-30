@@ -1,0 +1,15 @@
+﻿@model SAOnlineMart.Models.User
+
+<h2>Edit User</h2>
+
+<form asp-action="EditUser">
+    <div class="form-group">
+        <label asp-for="Username"></label>
+        <input asp-for="Username" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Email"></label>
+        <input asp-for="Email" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Save</button>
+</form>

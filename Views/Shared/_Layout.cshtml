@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="~/css/site.css" />
+    <title>@ViewData["Title"] - OnlineMart</title>
+    <partial name="_ValidationScriptsPartial" />
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="nav-left">
+                <li><a asp-controller="Home" asp-action="Index">Home</a></li>
+                <li><a asp-controller="Jewelry" asp-action="Index">Jewelry</a></li>
+                <li><a asp-controller="Clothing" asp-action="Index">Clothing</a></li>
+                <li><a asp-controller="Account" asp-action="ShoppingCart">Shopping Cart</a></li>
+            </ul>
+            <ul class="nav-right">
+                @if (!User.Identity.IsAuthenticated)
+                {
+                    <li><a asp-controller="Account" asp-action="Register">Register</a></li>
+                    <li><a asp-controller="Account" asp-action="Login">Login</a></li>
+                }
+                else
+                {
+                    @if (User.IsInRole("Admin"))
+                    {
+                        <li><a asp-area="Admin" asp-controller="Admin" asp-action="Index">Admin Panel</a></li>
+                    }
+                    <li class="logout-button-container">
+                        <form asp-action="Logout" method="post" asp-controller="Account">
+                            <button type="submit" class="logout-button">Logout</button>
+                        </form>
+                    </li>
+                }
+            </ul>
+        </nav>
+    </header>
+
+    <main role="main" class="container">
+        @if (TempData["Message"] is not null)
+        {
+            <div class="alert alert-info">
+                @TempData["Message"]
+            </div>
+        }
+
+        @RenderBody()
+    </main>
+
+    <footer>
+        <p>&copy; 2024 - OnlineMart</p>
+    </footer>
+
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
